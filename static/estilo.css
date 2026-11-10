@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f3f7;
+    color: #292333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.largura {
+    width: min(960px, 92%);
+    margin: 0 auto;
+}
+
+.topo {
+    background: #512b70;
+    color: white;
+    padding: 25px 0;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.topo p {
+    margin: 5px 0 0;
+}
+
+.introducao {
+    padding: 22px 0 8px;
+}
+
+.aviso {
+    background: #fff1d8;
+    border-left: 4px solid #bd7814;
+    padding: 10px;
+}
+
+.painel {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 18px 0;
+    box-shadow: 0 2px 10px #251b3012;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 13px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdb5c5;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    margin-top: 16px;
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 17px;
+    background: #512b70;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #39204e;
+}
+
+button.secundario {
+    margin: 0;
+    background: #e9e2ef;
+    color: #39204e;
+}
+
+.duasColunas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.cabecalhoLista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.ocorrencia {
+    border-top: 1px solid #e5e0e9;
+    padding: 15px 0;
+}
+
+.ocorrencia h3 {
+    margin: 0;
+    color: #512b70;
+}
+
+.ocorrencia p {
+    margin: 5px 0;
+}
+
+.regiao {
+    display: inline-block;
+    background: #eee8f3;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+#mensagem {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #655d6b;
+}
+
+@media (max-width: 600px) {
+    .duasColunas {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .cabecalhoLista {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
